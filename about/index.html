@@ -23,7 +23,7 @@
 <meta property="og:description" content="####本站所有文章，仅代表个人观点，与其他任何个人或组织无关！     coder/ - [] das1 欢迎来到梵居闹市 http://example.com/  打开书本。 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.   请问 Markdwon 怎么用？ - 小白  自己看教程！ - 愤青      flow st=&amp;gt;start: Start:&amp;gt;https">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg">
-<meta property="og:updated_time" content="2017-09-21T14:35:19.000Z">
+<meta property="og:updated_time" content="2017-09-21T14:42:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 <meta name="twitter:description" content="####本站所有文章，仅代表个人观点，与其他任何个人或组织无关！     coder/ - [] das1 欢迎来到梵居闹市 http://example.com/  打开书本。 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.   请问 Markdwon 怎么用？ - 小白  自己看教程！ - 愤青      flow st=&amp;gt;start: Start:&amp;gt;https">
@@ -355,8 +355,22 @@
 </tr>
 </tbody>
 </table>
-<p>```</p>
-<p>#include <stdio.h><br>int main(void)<br>{<br>    printf(“Hello world\n”);<br>}</stdio.h></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">  <span class="keyword">return</span> main();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><div id="flowchart-0" class="flow-chart"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
       
     </div>
