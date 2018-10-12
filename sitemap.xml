@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>zhaozepu.com/post-sitemap.xml</loc>
-        <lastmod>2018-10-12T13:32:29.379Z</lastmod>
+        <lastmod>2018-10-12T13:41:42.722Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>zhaozepu.com/page-sitemap.xml</loc>
-        <lastmod>2018-10-12T13:09:42.563Z</lastmod>
+        <lastmod>2018-10-12T13:44:52.349Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>zhaozepu.com/tag-sitemap.xml</loc>
+        <lastmod>2018-10-12T13:39:34.455Z</lastmod>
     </sitemap>
 
 </sitemapindex>
