@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Hexo] Theme BeanTech - zzp | 赵泽溥
+          upstream - zzp | 赵泽溥
         
     </title>
 
-    <link rel="canonical" href="zhaozepu.com/2017/03/18/hexo-theme-beantech/">
+    <link rel="canonical" href="zhaozepu.com/2018/10/13/upstream/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('Demo.png')
+            background-image: url('undefined')
             /*post*/
         
     }
@@ -90,16 +90,12 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                            
-                              <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
-                            
                         </div>
-                        <h1>[Hexo] Theme BeanTech</h1>
-                        <h2 class="subheading">This is hexo theme Demo.</h2>
+                        <h1>upstream</h1>
+                        <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by zzp on
-                            2017-03-18
+                            2018-10-13
                         </span>
                     </div>
                 
@@ -216,60 +212,48 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <blockquote>
-<p>Ported Theme of <a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="noopener">Hux Blog</a>, Thank <a href="https://github.com/Huxpro" target="_blank" rel="noopener">Huxpro</a> for designing such a flawless theme.</p>
-<p>This BeanTech theme created by <a href="http://beantech.org" target="_blank" rel="noopener">YuHsuan</a> modified from the original Porter <a href="http://kaijun.rocks/hexo-theme-huxblog/" target="_blank" rel="noopener">Kaijun</a></p>
-</blockquote>
-<h1><span id="live-demo"></span></h1>
-<hr>
-<p><img src="http://beantech.org/img/beantech-desktop.png" alt="BeanTech Desktop"></p>
-<h1><span id="usage">Usage</span></h1>
-<hr>
-<p>I publish the whole project for your convenience, so you can just follow the instruction down below, then you can easily customiz your own blog!</p>
-<p>Let’s begin!!!</p>
-<h2><span id="init">Init</span></h2>
-<hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/YenYuHsuan/hexo-theme-beantech.git ./hexo-beantech</span><br><span class="line"><span class="built_in">cd</span> hexo-beantech</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2><span id="modify">Modify</span></h2>
-<hr>
-<p>Modify <code>_config.yml</code> file with your own info.<br>
-Especially the section:</p>
-<h3><span id="deployment">Deployment</span></h3>
-<p>Replace to your own repo!</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/&lt;yourAccount&gt;/&lt;repo&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">&lt;your-branch&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="sidebar-settings">Sidebar settings</span></h3>
-<p>Copy your avatar image to <code>&lt;root&gt;/img/</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="literal">true</span>    <span class="comment"># whether or not using Sidebar.</span></span><br><span class="line"><span class="attr">sidebar-about-description:</span> <span class="string">"&lt;your description&gt;"</span></span><br><span class="line"><span class="attr">sidebar-avatar:</span> <span class="string">img/&lt;your</span> <span class="string">avatar</span> <span class="string">path&gt;</span></span><br></pre></td></tr></table></figure>
-<p>and activate your personal widget you like</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">widgets:</span>         <span class="comment"># here are widget you can use, you can comment out</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">featured-tags</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">short-about</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">recent-posts</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">friends-blog</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">category</span></span><br></pre></td></tr></table></figure>
-<p>if you want to add sidebar widget, please add at <code>layout/_widget</code>.</p>
-<h3><span id="signature-setup">Signature Setup</span></h3>
-<p>Copy your signature image to <code>&lt;root&gt;/img/signature</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">signature:</span> <span class="literal">true</span>   <span class="comment"># show signature</span></span><br><span class="line"><span class="attr">signature-img:</span> <span class="string">img/signature/&lt;your-signature-ID&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="go-to-top-icon-setup">Go to top icon Setup</span></h3>
-<p>My icon is using iron man, you can change to your own icon at <code>css/image</code>.</p>
-<h3><span id="post-tag">Post tag</span></h3>
-<p>You can decide to show post tags or not.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-true.png" alt="home_posts_tag-true"></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-false.png" alt="home_posts_tag-false"></p>
-<h3><span id="markdown-render">Markdown render</span></h3>
-<p>My markdown render engine plugin is <a href="https://github.com/celsomiranda/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a>.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Markdown-it config</span></span><br><span class="line"><span class="comment">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line"><span class="attr">  render:</span></span><br><span class="line"><span class="attr">    html:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    breaks:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    linkify:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    typographer:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    quotes:</span> <span class="string">'“”‘’'</span></span><br></pre></td></tr></table></figure>
-<p>and if you want to change the header anchor ‘ℬ’, you can go to <code>layout/post.ejs</code> to change it.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span>(<span class="string">"https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        anchors.options = &#123;</span><br><span class="line">          visible: <span class="string">'hover'</span>,</span><br><span class="line">          placement: <span class="string">'left'</span>,</span><br><span class="line">          icon: ℬ <span class="comment">// this is the header anchor "unicode" icon</span></span><br><span class="line">        &#125;;</span><br></pre></td></tr></table></figure>
-<h2><span id="hexo-basics">Hexo Basics</span></h2>
-<hr>
-<p>Some hexo command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">"&lt;post name&gt;"</span> <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate <span class="comment"># generate the static file</span></span><br><span class="line">hexo server <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
-<h1><span id="have-fun-_">Have fun ^_^</span></h1>
-<hr>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Place this tag where you want the button to render. -->
-<p>Please <a class="github-button" href="https://github.com/YenYuHsuan/hexo-theme-beantech" data-icon="octicon-star" aria-label="Star YenYuHsuan/hexo-theme-beantech on GitHub" target="_blank" rel="noopener">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/YenYuHsuan" aria-label="Follow @YenYuHsuan on GitHub" target="_blank" rel="noopener">Follow</a> would also be appreciated!<br>
-Peace!</p>
+                <p>Nginx 的 HttpUpstreamModule 提供对后端(backend)服务器的简单负载均衡。</p>
+<p>1.新建3台vagrant虚拟机 A（192.168.33.10）、B（192.168.33.20）、C（192.168.33.30）<br>
+2.本地配置host<br>
+192.168.33.10  <a href="http://z.com" target="_blank" rel="noopener">z.com</a><br>
+3.A 配置upstream模块<br>
+3.1 打开nginx.conf 在 http{}标签内配置upstream模块（以下是权重模式）</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">upstream z.com &#123;</span><br><span class="line">                server <span class="number">192.168</span><span class="number">.33</span><span class="number">.20</span>:<span class="number">80</span> weight=<span class="number">1</span>;</span><br><span class="line">                server <span class="number">192.168</span><span class="number">.33</span><span class="number">.30</span>:<span class="number">80</span> weight=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>3.2 配置server</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">        listen <span class="number">80</span>;</span><br><span class="line">        server_name a.com;</span><br><span class="line">        access_log  logs/a.access.log main;</span><br><span class="line">        location / &#123;<span class="comment">#通用规则</span></span><br><span class="line">           proxy_pass http:<span class="comment">//a.com;#配置代理</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.3 分别在B、C虚拟机中配置server</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">        listen <span class="number">80</span>;</span><br><span class="line">        server_name a.com;</span><br><span class="line">        access_log  logs/a.access.log main;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">                root /home/work/test;</span><br><span class="line">                index index.html index.php;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>3.4 在B、C中的/home/work/test目录下新建index.html文件，并输出不同内容（为了确认当前访问的是哪台机器）<br>
+3.5 重启3台虚拟机的nginx</p>
+<p>浏览器访问z.com可以看到A服务器会按照配置的权重比轮询B、C两台服务器<br>
+为了测试宕机情况，手动将B服务器关机<br>
+shutdown -h now<br>
+<a href="http://xn--z-d36csa242kpmm.com" target="_blank" rel="noopener">继续访问z.com</a> 会发现自动剔除了B服务器，每次访问都会命中C。</p>
+<p>一、分配方式<br>
+Nginx的upstream支持5种分配方式<br>
+1、轮询 轮询是upstream的默认分配方式,即每个请求按照时间顺序轮流分配到不同的后端服务器,如果某个后端服务器down掉后,能自动剔除。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">upstream backend &#123; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span>:<span class="number">8888</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.102</span>:<span class="number">8888</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.103</span>:<span class="number">8888</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2、weight 轮询的加强版,即可以指定轮询比率,weight和访问几率成正比,主要应用于后端服务器异质的场景下。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">upstream backend &#123; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span> weight=<span class="number">1</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.102</span> weight=<span class="number">2</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.103</span> weight=<span class="number">3</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、ip_hash 每个请求按照访问ip(即Nginx的前置服务器或者客户端IP)的hash结果分配,这样每个访客会固定访问一个后端服务器,可以解决session一致问题。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">upstream backend &#123; </span><br><span class="line">ip_hash; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span>:<span class="number">7777</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.102</span>:<span class="number">8888</span> weight=<span class="number">2</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.103</span>:<span class="number">9999</span> backup; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意:1、当负载调度算法为ip_hash时,后端服务器在负载均衡调度中的状态不能是weight和backup。2、导致负载不均衡。<br>
+4、fair fair顾名思义,公平地按照后端服务器的响应时间(rt)来分配请求,响应时间短即rt小的后端服务器优先分配请求。如果需要使用这种调度算法,必须下载Nginx的upstr_fair模块。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">upstream backend &#123; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.102</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.103</span>; fair; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5、url_hash,目前用consistent_hash替代url_hash与ip_hash类似,但是按照访问url的hash结果来分配请求,使得每个url定向到同一个后端服务器,主要应用于后端服务器为缓存时的场景下。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">upstream backend &#123; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.102</span>; </span><br><span class="line">server <span class="number">192.168</span><span class="number">.1</span><span class="number">.103</span>; </span><br><span class="line">hash $request_uri; </span><br><span class="line">hash_method crc32; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中,hash_method为使用的hash算法,需要注意的是:此时,server语句中不能加weight等参数。<br>
+提示:url_hash用途cache服务业务,memcached,squid,varnish。特点:每个rs都是不同的。</p>
+<p>参数说明:<br>
+server address parameters<br>
+server:关键字,必选。<br>
+address:主机名、域名、ip或unix socket,也可以指定端口号,必选。<br>
+parameters:可选参数,可选参数如下:<br>
+1.down:表示当前server已停用<br>
+2.backup:表示当前server是备用服务器,只有其它非backup后端服务器都挂掉了或者很忙才会分配到请求。<br>
+3.weight:表示当前server负载权重,权重越大被请求几率越大。默认是1.<br>
+4.max_fails和fail_timeout一般会关联使用,如果某台server在fail_timeout时间内出现了max_fails次连接失败,那么Nginx会认为其已经挂掉了,从而在fail_timeout时间内不再去请求它,fail_timeout默认是10s,max_fails默认是1,即默认情况是只要发生错误就认为服务器挂掉了,如果将max_fails设置为0,则表示取消这项检查。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">upstream backend &#123; </span><br><span class="line">server backend1.example.com weight=<span class="number">5</span>; </span><br><span class="line">server <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">8080</span> max_fails=<span class="number">3</span> fail_timeout=<span class="number">30</span>s; </span><br><span class="line">server unix:/tmp/backend3; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
                 
 
@@ -300,17 +284,6 @@ Peace!</p>
             <!-- Tabe of Content -->
             <!-- Table of Contents -->
 
-    
-      <aside id="sidebar">
-        <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Usage</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Init</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Modify</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">Deployment</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">Sidebar settings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol>
-        
-        </div>
-      </aside>
-    
-
                 
             <!-- Sidebar Container -->
             <div class="
@@ -325,10 +298,6 @@ Peace!</p>
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                        
-                          <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
-                        
                     </div>
                 </section>
                 
@@ -362,8 +331,8 @@ Peace!</p>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "zhaozepu.com/2017/03/18/hexo-theme-beantech/";
-    var disqus_url = "zhaozepu.com/2017/03/18/hexo-theme-beantech/";
+    var disqus_identifier = "zhaozepu.com/2018/10/13/upstream/";
+    var disqus_url = "zhaozepu.com/2018/10/13/upstream/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
