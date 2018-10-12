@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>zhaozepu.com/2018/10/13/hexoconfig/</loc>
+        <lastmod>2018-10-12T13:32:29.379Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>zhaozepu.com/2018/10/13/upstream/</loc>
-        <lastmod>2018-10-12T10:00:26.996Z</lastmod>
+        <lastmod>2018-10-12T13:08:09.568Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
