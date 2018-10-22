@@ -1,8 +1,9 @@
 ---
 layout: nginx
-title: upstream
+title: Nginx upstream 负载均衡
 date: 2018-10-12 17:10:21
-tags:
+header-img: "http://oab3kr3oh.bkt.clouddn.com/WechatIMG17.jpeg"
+tags: nginx
 ---
 
 Nginx 的 HttpUpstreamModule 提供对后端(backend)服务器的简单负载均衡。
